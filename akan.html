@@ -18,39 +18,32 @@
     <div class="App">
         <p> This application takes a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their Akan Name. </p>
     </div>
+    <form> 
+        <div class="Century">
+         <label for="CC">Century:</label><br>
+         <input typet="Number" id="Century" name="Century"><br>
+        </div>
 
-      <div>
-        <form class="form">
-            <div class="user-box">
-                <label for="input-century"></label>
-                <input type="number" class="form" id="CC" required placeholder="Century"><br>
-            </div>
-            <div class="user-box">
-                <label for="input-Date"></label>
-                <input type="number" class="form" id="DD" required placeholder="Date"><br>
-            </div>
-            <div class="user-box">
-                <label for="input-Month"></label>
-                <input type="number" class="form" id="MM" required placeholder="Month"><br>
-            </div>
-            <div class="user-box">
-                <label for="input-Year"></label>
-                <input type="number" class="form" id="YY" required placeholder="Year"><br>
-            </div>
-            <div class="input">
-                <br><input type="radio" name="gender" class="name" id="input" value="male" required>Male
-            </div>
-            <div class="input">
-                <br><input type="radio" name="gender" class="name" id="input" value="female" required>Female
-            </div>
-            <a href="#">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                 <button type="submit" name="button" class="click" onclick="validate();">Click to see the Akan Name</button>
-              </a>
-          </form>
-      </div>
+        <div class="Year">
+         <label for="YY">Year:</label><br>
+         <input type="Number" id="Year" name="Year">
+        </div>
+
+        <div class="Month">
+         <label for="MM">Month</label><br>
+         <input type="text" id="Month" name="Month"><br>
+        </div>
+
+        <div class="Day">
+            <label for="Day">Day:</label><br>
+            <input type="text" id="Day" name="Day">
+        </div>
+
+          </form> 
+
+
+
+      </form>
+     
 </body>
 </html> 
