@@ -26,5 +26,6 @@ h1{
  }
  form{
     float: right;
+    position: absolute;
 
   }
