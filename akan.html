@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="akan.css">
+    <link rel="stylesheet" href="akan.js">
      
 </head>
 <body>
@@ -19,7 +20,37 @@
     </div>
 
       <div>
-          
+        <form class="form">
+            <div class="user-box">
+                <label for="input-century"></label>
+                <input type="number" class="form" id="CC" required placeholder="Century"><br>
+            </div>
+            <div class="user-box">
+                <label for="input-Date"></label>
+                <input type="number" class="form" id="DD" required placeholder="Date"><br>
+            </div>
+            <div class="user-box">
+                <label for="input-Month"></label>
+                <input type="number" class="form" id="MM" required placeholder="Month"><br>
+            </div>
+            <div class="user-box">
+                <label for="input-Year"></label>
+                <input type="number" class="form" id="YY" required placeholder="Year"><br>
+            </div>
+            <div class="input">
+                <br><input type="radio" name="gender" class="name" id="input" value="male" required>Male
+            </div>
+            <div class="input">
+                <br><input type="radio" name="gender" class="name" id="input" value="female" required>Female
+            </div>
+            <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                 <button type="submit" name="button" class="click" onclick="validate();">Click to see the Akan Name</button>
+              </a>
+          </form>
       </div>
 </body>
 </html> 
