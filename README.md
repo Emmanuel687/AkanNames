@@ -10,6 +10,8 @@ Javascript
 Emmanuel,Kenya
 ## Installation
 Have a browser and open the link.
+## Live link
+https://emmanuel687.github.io/AkanNames/
 ## Contact information
 emmanuelkoech2002@gmail.com
 ### License
