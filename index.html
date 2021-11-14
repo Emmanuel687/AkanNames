@@ -19,28 +19,46 @@
         <p> This application takes a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their Akan Name. </p>
     </div>
 
-    <form> 
+    <div>
+      <form> 
         <div class="Century">
          <label for="CC">Century:</label><br>
-         <input type="Number" id="Century" name="Century"><br>
+         <input type="Number" id="Century" min="10" max="20" name="Century"><br>
         </div>
 
         <div class="Year">
          <label for="YY">Year:</label><br>
-         <input type="Number" id="Year" name="Year">
+         <input type="Number" id="Year" min="1900" max="2030"name="Year">
         </div>
 
         <div class="Month">
          <label for="MM">Month</label><br>
-         <input type="number" id="Month" name="Month"><br>
+         <input type="number" id="Month" min="1" max="12" name="Month"><br>
         </div>
 
         <div class="Day">
             <label for="DD">Day:</label><br>
-            <input type="number" id="Day" name="Day">
+            <input type="number" id="Day" min="1" max="31" name="Day">
         </div>
 
+        <p>Select your gender</p>
+        <div class="radio">
+            <label>
+              <input type="radio" name="gender" value="Female" checked>
+              Female
+            </label>   
+        </div>
+
+        <div class="radio">
+             <label>
+              <input type="radio" name="gender" value="Male">
+              Male
+            </label>
+        </div>
+
+
       </form> 
+    </div>      
      
 </body>
 </html> 
