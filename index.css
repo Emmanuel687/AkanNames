@@ -28,19 +28,14 @@ h1{
     margin-bottom: 45px;
     text-align: left;
  }
- form{
-    float: right;
-    position: absolute;
-
-  }
-  body{
+ 
+body{
       background-image: url(Images/jeffrey-ofori-tOshpNl-sW4-unsplash\ \(1\).jpg);
       background-size: 100% 150%;
   }
-  form{
+   .form{
       text-align: left;
       color: white;
+      float: inherit;
   }
-  form{
-    
-      }
+.
