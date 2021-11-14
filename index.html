@@ -1,112 +1,68 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="akan.js">
-     
+    <link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.css">
+    <title>Akan Names</title>
+    <link href="index.css" rel="stylesheet">
+    <script src="index.js"></script>
 </head>
+
 <body>
-    <script> so</script>
-    <h1>Akan Names</h1>
-    <div class="History"> 
-        <p>Akan names come from a traditional naming system for people from countries such as Togo, Ivory Coast and Ghana. A child's name is determined by factors surrounding his or her birth. For example, the day of their birth or the manner in which they were born may determine which name they get irrespective of their gender.</p>
-    </div>
-    <h2>About App</h2>
-    <div class="App">
-        <p> This application takes a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their Akan Name. </p>
-    </div>
-    
-    <table class="tg">
-        <tr>
-            <th class="tg-baqh">Day of the Week</th>
-            <th class="tg-0lax">Female Name</th>
-            <th class="tg-0lax">Male Name</th>
-        </tr>
-        <tr>
-            <td class="tg-0lax">SUNDAY</td>
-            <td class="tg-0lax">Akosua</td>
-            <td class="tg-0lax">Kwasi</td>
-        </tr>
-        <tr>
-            <td class="tg-0lax">MONDAY</td>
-            <td class="tg-0lax">Adwoa</td>
-            <td class="tg-0lax">Kudwo</td>
-        </tr>
-        <tr>
-            <td class="tg-0lax">TUESDAY</td>
-            <td class="tg-0lax">Abenaa</td>
-            <td class="tg-0lax">Kwabena</td>
-        </tr>
-        <tr>
-            <td class="tg-0lax">WEDNESDAY</td>
-            <td class="tg-0lax">Akua</td>
-            <td class="tg-0lax">Kwaku</td>
-        </tr>
-        <tr>
-            <td class="tg-0lax">THURSDAY</td>
-            <td class="tg-0lax">Yaa</td>
-            <td class="tg-0lax">Yaw</td>
-        </tr>
-        <tr>
-            <td class="tg-0lax">FRIDAY</td>
-            <td class="tg-0lax">Afua</td>
-            <td class="tg-0lax">Kofi</td>
-        </tr>
-        <tr>
-            <td class="tg-0lax">SATURDAY</td>
-            <td class="tg-0lax">Ama</td>
-            <td class="tg-0lax">Kwame</td>
-        </tr>
-    </table>
+         <h1>Akan Names</h1>
+         <div class="History"> 
+           <p>Akan names come from a traditional naming system for people from countries such as Togo, Ivory Coast and Ghana. A child's name is determined by factors surrounding his or her birth. For example, the day of their birth or the manner in which they were born may determine which name they get irrespective of their gender.</p>
+         </div>
 
-    <div class="form">
-      <form>
-        <div class="Century">
-         <label for="CC">Century:</label><br>
-         <input type="Number" id="Century" min="10" max="20" name="Century"><br>
+         <h2>About App</h2>
+         <div class="App">
+             <p> This application takes a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their Akan Name. </p>
+         </div>
+
+        <div class="login-box">
+        <div class="class-md-4">
+        <p>Fill in name to get Akan Name</p>
+
+        <form action="index.html">
+            <div class="user-box">
+                <label for="input-century"></label>
+                <input type="number" class="form" id="CC" required placeholder="Century"><br>
+            </div>
+            <div class="user-box">
+                <label for="input-Date"></label>
+                <input type="number" class="form" id="DD" required placeholder="Date"><br>
+            </div>
+            <div class="user-box">
+                <label for="input-Month"></label>
+                <input type="number" class="form" id="MM" required placeholder="Month"><br>
+            </div>
+            <div class="user-box">
+                <label for="input-Year"></label>
+                <input type="number" class="form" id="YY" required placeholder="Year"><br>
+            </div>
+            <div class="input">
+                <br><input type="radio" name="gender" class="name" id="input" value="male" required>Male
+            </div>
+            <div class="input">
+                <br><input type="radio" name="gender" class="name" id="input" value="female" required>Female
+            </div>
+            <a href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                 <button type="submit" name="button" class="click" onclick="validate();">Click to see the Akan Name</button>
+              </a>
+          </form>
         </div>
-
-        <div class="Year">
-         <label for="YY">Year:</label><br>
-         <input type="Number" id="Year" min="1900" max="2030"name="Year">
         </div>
-
-        <div class="Month">
-         <label for="MM">Month</label><br>
-         <input type="number" id="Month" min="1" max="12" name="Month"><br>
+            </div>
+          </div>
         </div>
-
-        <div class="Day">
-            <label for="DD">Day:</label><br>
-            <input type="number" id="Day" min="1" max="31" name="Day">
-        </div>
-
-        <p>Select your gender</p>
-        <div class="Female">
-            <label>
-              <input type="radio" name="gender" value="Female" checked>
-              Female
-            </label>   
-        </div>
-
-        <div class="Male">
-             <label>
-              <input type="radio" name="gender" value="Male">
-              Male
-            </label>
-        </div>
-
-        <div class="submit">
-            <input type="submit" value="submit">
-        </div>
-
-      </form> 
-    </div>      
-  
-     
 </body>
-</html> 
+
+</html>
